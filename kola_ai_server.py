@@ -40,7 +40,7 @@ app = Flask(__name__)
 CORS(app)
 
 MODEL_NAME = "openai/gpt-oss-120b"
-PORT = int(os.environ.get("PORT", "5000"))
+PORT = int(os.environ.get("PORT", "8080"))
 
 api_key = os.environ.get("GROQ_API_KEY")
 if not api_key:
